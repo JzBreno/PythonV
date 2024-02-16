@@ -17,4 +17,9 @@ print(carros.head(5))
 #agrpando colunas
 coluna_agrupamento = carros['cyl']
 grupos_carros = carros.groupby(coluna_agrupamento)
-grupos_carros.mean()
+print(grupos_carros.mean())
+
+carros.columns = ['nomes', 'mpg', 'cyl','disp', 'hpt', 'drat', 'wt', 'qsec', 'vs', 'am', 'gear', 'carb']
+grupos_carros = carros.groupby('cyl')
+coluna = carros['cyl']
+grupos_carros = carros.groupby(coluna)
