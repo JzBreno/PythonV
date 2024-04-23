@@ -25,7 +25,7 @@ print(numero)
 del lista[2] # dele valor da lista e o posterior tomara o indice
 print(lista[2])
 
-lista.append(50) # ira adicionar valor no fim da lista
+lista.append(input()) # ira adicionar valor no fim da lista
 print(lista)
 
 lista.pop()# pop remove o ultimo valor da lista, dentro das () pode passar o indice que desja remover, default sera o ultimo
